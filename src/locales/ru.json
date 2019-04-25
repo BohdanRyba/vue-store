@@ -1,3 +1,10 @@
 {
-  "message": "hello i18n !!"
+  "contacts": "Контакты",
+  "credit": "Кредит",
+  "credits": "Кредиты",
+  "delivery": "Доставка",
+  "delivery-and-payment": "Доставка и оплата",
+  "faq": "Часто задаваемые вопросы",
+  "megamenu-btn": "Мегаменю",
+  "warranty": "Гарантия"
 }

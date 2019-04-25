@@ -1,16 +1,33 @@
 <template>
   <div id="app">
+    <top-info-bar></top-info-bar>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <Megamenu>{{$t('megamenu-btn')}}</Megamenu>
+      <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import Megamenu from "@/components/Megamenu";
+@Component({
+  components: {
+    Megamenu
+  }
+})
+export default class App extends Vue {}
+</script>
 
 <style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Arial", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
